@@ -1,0 +1,115 @@
+.picture-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.picture-list-content {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    max-width: 200px;
+    margin: 10px;
+}
+
+.picture-img {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 200px;
+    height: 300px;
+    overflow: hidden;
+    border: 1px solid black;
+    background-color: white;
+    border-radius: 10px;
+    position: relative;
+    margin: 0px 0 20px;
+    transition: 0.3s;
+}
+
+.picture-img:hover {
+    transform: scale(1.1);
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(
+        0,
+        0,
+        0,
+        0
+    ); /* Настройка цвета и прозрачности для блока с заголовком */
+    transition: background 0.5s ease;
+}
+.picture-img:hover .overlay {
+    display: block;
+    background: rgba(
+        0,
+        0,
+        0,
+        0.3
+    ); /* Настройка цвета и прозрачности для блока с заголовком при наведении */
+}
+.picture-pinterest {
+    /* width: 100%; */
+    height: 100%;
+    background-color: white;
+}
+.picture-button {
+    position: absolute;
+    top: 85%;
+    left: 75%;
+    /* border: 1px solid rgb(95, 94, 94); */
+    /* border: 1px solid rgb(233, 28, 28); */
+    border: 1px solid white;
+    font-size: 150%; /*1.900em */
+    text-align: center;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    background: local;
+    opacity: 0;
+    transition: opacity 0.35s ease;
+    color: white;
+    cursor: pointer;
+}
+
+.picture-img:hover .picture-button {
+    opacity: 1;
+}
+
+.picture-user {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 0 10px;
+    margin-bottom: 10px;
+    background: local;
+}
+.user-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: #86878b; */
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-right: 5px;
+    margin-bottom: 10px;
+}
+.user-img img {
+    height: 100%;
+}
+.user-text {
+    font-size: 14px;
+    color: #090d1f;
+    background: local;
+    font-family: cursive;
+}

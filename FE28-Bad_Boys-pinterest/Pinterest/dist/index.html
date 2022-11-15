@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/index.3092e1e0.css">
+        <!-- <script src=”/Scripts/lib/require.js”></script> -->
+        <!-- <script type="text/javascript" src="users_data.json"></script> -->
+        <!-- <script type="text/javascript" src="javascrip.js"></script> -->
+        <title>Pinterest</title>
+    </head>
+    <body>
+        <div id="root">
+            <header class="header">
+                <div class="conteiner">
+                    <div class="header-wrap">
+                        <h1 class="main-title">Pinterest</h1>
+                        <input type="text" class="search-header" placeholder="поиск..." required="">
+                        <select class="drop-list">
+                            <option>Выбрать доску</option>
+                            <option>Доска 1</option>
+                            <option>Доска 2</option>
+                            <option>Доска 3</option>
+                        </select>
+                    </div>
+                </div>
+            </header>
+            <section class="picture">
+                <div class="conteiner">
+                    <ul class="picture-list" id="alllist"></ul>
+                </div>
+            </section>
+            <dialog id="choiceMenu">
+                <div class="choice_menu_wraper">
+                    <div class="choice_menu_btn_wraper">
+                        <button class="choice_menu_btn_add">
+                            Добавить на доску
+                        </button>
+                    </div>
+                    <div class="choice_menu_btn_wraper">
+                        <button class="choice_menu_btn_report">
+                            Пожаловаться
+                        </button>
+                    </div>
+                </div>
+            </dialog>
+            <dialog id="reportWindow">
+                <div class="report_wraper">
+                    <div class="report_tittle">
+                        <h2 class="report_tittle_text">Пожаловаться</h2>
+                    </div>
+                    <ul class="report_list">
+                        <li class="report_list_item">
+                            <input type="radio" name="#">
+                            <p class="list_item_text">Не нравится ее рожа</p>
+                        </li>
+                        <li class="report_list_item">
+                            <input type="radio" name="#">
+                            <p class="list_item_text">Это моя фотография</p>
+                        </li>
+                        <li class="report_list_item">
+                            <input type="radio" name="#">
+                            <p class="list_item_text">Пользователь козел</p>
+                        </li>
+                        <li class="report_list_item">
+                            <input type="radio" name="#">
+                            <p class="list_item_text">Так себе фотка</p>
+                        </li>
+                        <li class="report_list_item">
+                            <input type="radio" name="#">
+                            <p class="list_item_text">Запрещенный контент</p>
+                        </li>
+                        <li class="report_list_item">
+                            <input type="radio" name="#">
+                            <p class="list_item_text">Потому что я вечно ною</p>
+                        </li>
+                        <li class="report_list_item">
+                            <input type="radio" name="#">
+                            <p class="list_item_text">Не твое собачье дело</p>
+                        </li>
+                    </ul>
+                    <div class="report_buttons">
+                        <button class="report_btn_cancel">Cancel</button>
+                        <button class="report_btn_send">Send</button>
+                    </div>
+                </div>
+            </dialog>
+            <dialog id="addWindow">
+                <div class="add_wraper">
+                    <div class="add_tittle">
+                        <h2 class="add_tittle_text">Выберите доску</h2>
+                    </div>
+                    <ul class="add_list">
+                        <li class="add_list_item">
+                            <p class="add_item_text" id="Доска 1">Доска 1</p>
+                        </li>
+                        <li class="add_list_item">
+                            <p class="add_item_text" id="Доска 2">Доска 2</p>
+                        </li>
+                        <li class="add_list_item">
+                            <p class="add_item_text" id="Доска 3">Доска 3</p>
+                        </li>
+                    </ul>
+                </div>
+            </dialog>
+
+            <script src="/index.975ef6c8.js" defer=""></script>
+            <!-- <script type="module" src="./windows.js"></script> -->
+        </div>
+    </body>
+</html>
