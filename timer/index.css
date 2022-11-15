@@ -1,0 +1,15 @@
+@import url(./background.css);
+
+* {
+    margin: 0; /* Sbrasywajem nastroki otstupov dla sajta*/
+    box-sizing: border-box; /*Cztob razmery nie izmienialis i vkluczalis v sozdannyj element*/
+    padding: 0;
+    list-style: none; /*stil markera, jego polorzenije*/
+    text-decoration: none; /*ubirajem podczerkivanije*/
+}
+
+/* .container {
+    max-width: 1170px;
+    margin: auto;
+    padding: 0 15px;
+} */

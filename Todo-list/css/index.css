@@ -1,0 +1,31 @@
+@import url(../css/todo.css);
+@import url(../css/todo_hat.css);
+
+* {
+    margin: 0; /* Sbrasywajem nastroki otstupov dla sajta*/
+    box-sizing: border-box; /*Cztob razmery nie izmienialis i vkluczalis v sozdannyj element*/
+    padding: 0;
+    list-style: none; /*stil markera, jego polorzenije*/
+    text-decoration: none; /*ubirajem podczerkivanije*/
+}
+
+/* .container {
+    max-width: 1170px;
+    margin: auto;
+    padding: 0 15px;
+} */
+
+textarea {
+    display: block;
+    /* border: 1px solid rgb(15, 15, 15); */
+    border-radius: 8px;
+    padding: 10px;
+    width: 478px;
+    height: 116px;
+    resize: none;
+    margin: 0 10px;
+    /* border: 1px solid #bdbdbd;
+    border-top: none;
+    border-left: none;
+    border-right: none; */
+}
